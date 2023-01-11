@@ -20,11 +20,11 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Marker> _list = [
     Marker(
         markerId: MarkerId('1'),
-        position: LatLng(22.341900, 91.815536),
+        position: LatLng(22.3344, 91.8332),
         infoWindow: InfoWindow(title: 'My Current Location')),
     Marker(
         markerId: MarkerId('2'),
-        position: LatLng(22.341900, 91.9092),
+        position: LatLng(22.341900, 91.815536),
         infoWindow: InfoWindow(title: 'Another Location-1')),
     Marker(
         markerId: MarkerId('3'),
@@ -33,15 +33,16 @@ class _HomeScreenState extends State<HomeScreen> {
   ];
 
   static const CameraPosition _kGooglePlex = CameraPosition(
-    target: LatLng(22.341900, 91.815536),
+    target: LatLng(22.3344, 91.8332),
     zoom: 15,
   );
+  
 
   static const CameraPosition _kLake = CameraPosition(
       bearing: 192.8334901395799,
-      target: LatLng(22.341900, 91.815536),
+      target: LatLng(23.8103, 90.4125),
       tilt: 59.440717697143555,
-      zoom: 19.151926040649414);
+      zoom: 14.151926040649414);
 
   @override
   void initState() {
@@ -69,7 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
           // zoomGesturesEnabled: true,
           // myLocationButtonEnabled: true,
           // myLocationEnabled: true,
-          // // trafficEnabled: true,
+          // trafficEnabled: true,
           // rotateGesturesEnabled: true,
           // buildingsEnabled: true,
           markers: Set<Marker>.of(_markers),
@@ -80,10 +81,9 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       floatingActionButton: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 50),
-        child: FloatingActionButton.extended(
+        child: FloatingActionButton(
           onPressed: _goToTheLake,
-          label: const Text('To the lake!'),
-          icon: const Icon(Icons.directions_boat),
+          child: const Icon(Icons.location_disabled_outlined),
         ),
       ),
     );
