@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_goolge_map/Convert%20Latlang%20to%20Address/Geocoder_convert_latlang_to_address.dart';
 import 'package:flutter_goolge_map/Convert%20Latlang%20to%20Address/convert_latlang_to_address.dart';
 import 'package:flutter_goolge_map/HomePage/home_screen.dart';
+import 'package:flutter_goolge_map/Location/user_current_location.dart';
 
 void main(List<String> args) {
   runApp(MyApp());
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepPurple
       ),
       // home: ConvertLatLangToAddress(),
-      home: GeocoderConvertLatLangToAddress(),
+      // home: GeocoderConvertLatLangToAddress(),
+      home: GetUserCurrentLocation(),
     );
   }
 }

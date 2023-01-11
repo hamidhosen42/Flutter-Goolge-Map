@@ -38,7 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_maps_flutter: 
   custom_info_window: 
-  geolocator: 
+  geolocator: ^9.0.2
   flutter_geocoder: 
   geocoding: 
   flutter_polyline_points: 
@@ -49,6 +49,7 @@ dependencies:
   path_provider:
   image:
   image_picker:
+  baseflow_plugin_template: ^2.1.1
 
 dev_dependencies:
   flutter_test:
