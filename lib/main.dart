@@ -5,6 +5,8 @@ import 'package:flutter_goolge_map/Convert%20Latlang%20to%20Address/convert_latl
 import 'package:flutter_goolge_map/HomePage/home_screen.dart';
 import 'package:flutter_goolge_map/Location/user_current_location.dart';
 
+import 'Location/google_search_places_api.dart';
+
 void main(List<String> args) {
   runApp(MyApp());
 }
@@ -22,7 +24,8 @@ class MyApp extends StatelessWidget {
       ),
       // home: ConvertLatLangToAddress(),
       // home: GeocoderConvertLatLangToAddress(),
-      home: GetUserCurrentLocation(),
+      // home: GetUserCurrentLocation(),
+      home: GoogleSearchPlacesApi(),
     );
   }
 }
