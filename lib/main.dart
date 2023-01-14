@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_goolge_map/Convert%20Latlang%20to%20Address/Geocoder_convert_latlang_to_address.dart';
 import 'package:flutter_goolge_map/Convert%20Latlang%20to%20Address/convert_latlang_to_address.dart';
+import 'package:flutter_goolge_map/GoogleMapStyle/google_map_styling_screen.dart';
 import 'package:flutter_goolge_map/HomePage/home_screen.dart';
 import 'package:flutter_goolge_map/Location/user_current_location.dart';
 import 'package:flutter_goolge_map/Polygone/polygone_screen.dart';
@@ -35,7 +36,8 @@ class MyApp extends StatelessWidget {
       // home: CustomMarkerInfoWindowScreen(),
       // home: PolygoneScreen(),
       // home: PolylineScreen(),
-      home: NetworkImageCustomMarker(),
+      // home: NetworkImageCustomMarker(),
+      home: GoolgeMapStyling(),
     );
   }
 }
