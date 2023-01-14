@@ -1,7 +1,6 @@
 // ignore_for_file: unused_field, prefer_final_fields, prefer_const_constructors, prefer_interpolation_to_compose_strings
 
 import 'dart:async';
-import 'dart:ui';
 import 'dart:ui' as ui;
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';

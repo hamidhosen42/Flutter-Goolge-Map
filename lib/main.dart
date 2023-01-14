@@ -9,6 +9,7 @@ import 'package:flutter_goolge_map/Polygone/polyline_screen.dart';
 
 import 'GoogleMapMarker/custom_marker_info_window.dart';
 import 'GoogleMapMarker/custom_marker_with_network_image.dart';
+import 'GoogleMapMarker/network_image_marker.dart';
 import 'Location/google_search_places_api.dart';
 
 void main(List<String> args) {
@@ -33,7 +34,8 @@ class MyApp extends StatelessWidget {
       // home: CustomMarkerWithNetworkImage(),
       // home: CustomMarkerInfoWindowScreen(),
       // home: PolygoneScreen(),
-      home: PolylineScreen(),
+      // home: PolylineScreen(),
+      home: NetworkImageCustomMarker(),
     );
   }
 }
