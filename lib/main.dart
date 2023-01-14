@@ -5,7 +5,8 @@ import 'package:flutter_goolge_map/Convert%20Latlang%20to%20Address/convert_latl
 import 'package:flutter_goolge_map/HomePage/home_screen.dart';
 import 'package:flutter_goolge_map/Location/user_current_location.dart';
 
-import 'HomePage/custom_marker_with_network_image.dart';
+import 'GoogleMapMarker/custom_marker_info_window.dart';
+import 'GoogleMapMarker/custom_marker_with_network_image.dart';
 import 'Location/google_search_places_api.dart';
 
 void main(List<String> args) {
@@ -27,7 +28,8 @@ class MyApp extends StatelessWidget {
       // home: GeocoderConvertLatLangToAddress(),
       // home: GetUserCurrentLocation(),
       // home: GoogleSearchPlacesApi(),
-      home: CustomMarkerWithNetworkImage(),
+      // home: CustomMarkerWithNetworkImage(),
+      home: CustomMarkerInfoWindowScreen(),
     );
   }
 }
